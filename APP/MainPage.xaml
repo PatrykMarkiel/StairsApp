@@ -3,11 +3,42 @@
              x:Class="APP.MainPage">
 
     <VerticalStackLayout Spacing="25" Padding="30">
-        <Entry x:Name="HkEntry" Placeholder="Wysokość Hk (mm)" Keyboard="Numeric"/>
-        <Entry x:Name="LkEntry" Placeholder="Długość Lk (mm)" Keyboard="Numeric"/>
-        <Button Text="Oblicz" Clicked="OnSubmitClicked"/>
-        <Label x:Name="ResultLabel" IsVisible="False"/>
-        <GraphicsView x:Name="StairsLayout" IsVisible="True" HeightRequest="300" />
+        <Frame HasShadow="True" 
+               BorderColor="Gray" 
+               CornerRadius="10" 
+               Padding="0">
+            <Entry x:Name="HkEntry" 
+                   Placeholder="Wysokość Hk (mm)" 
+                   Keyboard="Numeric"   
+                   BackgroundColor="White"
+                   TextColor="Black"/>
+        </Frame>
+
+        <Frame HasShadow="True" 
+               BorderColor="Gray" 
+               CornerRadius="10" 
+               Padding="0">
+            <Entry x:Name="LkEntry" 
+                   Placeholder="Długość Lk (mm)" 
+                   Keyboard="Numeric"   
+                   BackgroundColor="White" 
+                   TextColor="Black"/>
+        </Frame>
+
+        <Button Text="Oblicz" 
+                Clicked="OnSubmitClicked" 
+                BackgroundColor="Bisque"
+                FontAttributes="Bold" />
+
+        <Label x:Name="ResultLabel" 
+               IsVisible="False" 
+               FontAttributes="Bold" />
+
+        <GraphicsView x:Name="StairsLayout" 
+              IsVisible="True" 
+              HeightRequest="300" 
+              WidthRequest="{Binding Source={x:Reference StairsLayout}, Path=Height}" />
+
     </VerticalStackLayout>
 
 </ContentPage>

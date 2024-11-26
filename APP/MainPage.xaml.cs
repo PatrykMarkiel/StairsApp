@@ -10,17 +10,14 @@ namespace APP
 
         private void OnSubmitClicked(object sender, EventArgs e)
         {
-            if (!int.TryParse(HkEntry.Text, out int Hk) || !int.TryParse(LkEntry.Text, out int Lk))
-            {
-                ResultLabel.Text = "Podaj poprawne wartości liczbowe dla Hk i Lk.";
-                ResultLabel.TextColor = Colors.Red;
-                ResultLabel.IsVisible = true;
-                return;
-            }
+            int Hk;
+            int Lk;
+            Hk = int.Parse(HkEntry.Text);
+            Lk = int.Parse(LkEntry.Text);
             var (resultText, stepsNumber, stepHeight, stepDepth, stairsMade) = CalculateStairs(Hk, Lk);
 
             ResultLabel.Text = resultText;
-            ResultLabel.TextColor = stairsMade ? Colors.Blue : Colors.Red;
+            ResultLabel.TextColor = stairsMade ? Colors.White : Colors.Red;
             ResultLabel.IsVisible = true;
             if (stairsMade)
             {
@@ -28,27 +25,23 @@ namespace APP
             }
             else
             {
-                StairsLayout.IsVisible = false; 
+                StairsLayout.IsVisible = false;
             }
         }
+
         private void DrawStairs(int stepsNumber, float stepHeight, float stepDepth)
         {
-            // Get the dimensions of the drawing area
             var width = StairsLayout.Width;
             var height = StairsLayout.Height;
 
-            // Create a scaled view of the stairs
-            var scaleX = width / (stepsNumber * stepDepth);  // Scale based on the width of the available space
-            var scaleY = height / (stepsNumber * stepHeight); // Scale based on the height of the available space
+            var scaleX = width / (stepsNumber * stepDepth);
+            var scaleY = height / (stepsNumber * stepHeight);
 
-            // Create a scaled rectangle for the stairs
             var stairsRect = new Rect(0, 0, stepsNumber * stepDepth * scaleX, stepsNumber * stepHeight * scaleY);
 
-            // Draw the stairs
             StairsLayout.Drawable = new StairDrawer(stepsNumber, stepHeight, stepDepth, (float)scaleX, (float)scaleY);
             StairsLayout.IsVisible = true;
         }
-
 
         private (string, int, float, float, Boolean) CalculateStairs(int Hk, int Lk)
         {
@@ -88,7 +81,6 @@ namespace APP
                 {
                     stairsMade = true;
                     float remainingLength = Lk - (stepsNumber * stepDepthCalculated);
-
                     return (
                         $"Liczba stopni: {stepsNumber}\n" +
                         $"Wysokość stopnia: {stepHeight:F2} mm\n" +
@@ -101,8 +93,7 @@ namespace APP
                 }
             }
 
-            return ("Nie udało się stworzyć wygodnych schodów.", 0, 0f, 0f,false);
+            return ("Nie udało się stworzyć wygodnych schodów.", 0, 0f, 0f, false);
         }
-
     }
 }
