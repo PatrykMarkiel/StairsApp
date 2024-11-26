@@ -1,25 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="APP.MainPage">
-    <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
-            <Label Text="Formularz"
-                   FontSize="24"
-                   HorizontalOptions="Center" />
 
-            <Entry x:Name="HkEntry" Placeholder="Wprowadź wartość Hk" Keyboard="Numeric" />
-            <Entry x:Name="LkEntry" Placeholder="Wprowadź wartość Lk" Keyboard="Numeric" />
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Entry x:Name="HkEntry" Placeholder="Wysokość Hk (mm)" Keyboard="Numeric"/>
+        <Entry x:Name="LkEntry" Placeholder="Długość Lk (mm)" Keyboard="Numeric"/>
+        <Button Text="Oblicz" Clicked="OnSubmitClicked"/>
+        <Label x:Name="ResultLabel" IsVisible="False"/>
+        <GraphicsView x:Name="StairsLayout" IsVisible="True" HeightRequest="300" />
+    </VerticalStackLayout>
 
-            <Button Text="Wyślij"
-                    Clicked="OnSubmitClicked"
-                    BackgroundColor="#4CAF50"
-                    TextColor="White" />
-
-            <Label x:Name="ResultLabel"
-                   FontSize="18"
-                   TextColor="Blue"
-                   IsVisible="False" />
-        </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

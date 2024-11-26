@@ -1,4 +1,5 @@
-﻿namespace APP
+﻿using APP.Drawers;
+namespace APP
 {
     public partial class MainPage : ContentPage
     {
@@ -6,9 +7,9 @@
         {
             InitializeComponent();
         }
+
         private void OnSubmitClicked(object sender, EventArgs e)
         {
-
             if (!int.TryParse(HkEntry.Text, out int Hk) || !int.TryParse(LkEntry.Text, out int Lk))
             {
                 ResultLabel.Text = "Podaj poprawne wartości liczbowe dla Hk i Lk.";
@@ -16,14 +17,40 @@
                 ResultLabel.IsVisible = true;
                 return;
             }
+            var (resultText, stepsNumber, stepHeight, stepDepth, stairsMade) = CalculateStairs(Hk, Lk);
 
-            // Obliczanie schodów
-            ResultLabel.Text = CalculateStairs(Hk, Lk);
-            ResultLabel.TextColor = Colors.Blue;
+            ResultLabel.Text = resultText;
+            ResultLabel.TextColor = stairsMade ? Colors.Blue : Colors.Red;
             ResultLabel.IsVisible = true;
+            if (stairsMade)
+            {
+                DrawStairs(stepsNumber, stepHeight, stepDepth);
+            }
+            else
+            {
+                StairsLayout.IsVisible = false; 
+            }
+        }
+        private void DrawStairs(int stepsNumber, float stepHeight, float stepDepth)
+        {
+            // Get the dimensions of the drawing area
+            var width = StairsLayout.Width;
+            var height = StairsLayout.Height;
+
+            // Create a scaled view of the stairs
+            var scaleX = width / (stepsNumber * stepDepth);  // Scale based on the width of the available space
+            var scaleY = height / (stepsNumber * stepHeight); // Scale based on the height of the available space
+
+            // Create a scaled rectangle for the stairs
+            var stairsRect = new Rect(0, 0, stepsNumber * stepDepth * scaleX, stepsNumber * stepHeight * scaleY);
+
+            // Draw the stairs
+            StairsLayout.Drawable = new StairDrawer(stepsNumber, stepHeight, stepDepth, (float)scaleX, (float)scaleY);
+            StairsLayout.IsVisible = true;
         }
 
-        private string CalculateStairs(int Hk, int Lk)
+
+        private (string, int, float, float, Boolean) CalculateStairs(int Hk, int Lk)
         {
             const float MinStepHeight = 155;
             const float MaxStepHeight = 190;
@@ -31,7 +58,7 @@
             const float MaxStepDepth = 310;
 
             int stepsNumber = 0;
-            float stepHeight = 0f;
+            float stepHeight = 0;
             bool stairsMade = false;
 
             for (stepsNumber = (int)Math.Ceiling((float)Hk / MaxStepHeight);
@@ -62,17 +89,20 @@
                     stairsMade = true;
                     float remainingLength = Lk - (stepsNumber * stepDepthCalculated);
 
-                    return $"Liczba stopni: {stepsNumber}\n" +
-                           $"Wysokość stopnia: {stepHeight:F2} mm\n" +
-                           $"Głębokość stopnia: {stepDepthCalculated:F2} mm\n" +
-                           (remainingLength > 0
-                               ? $"Pozostała wolna przestrzeń w długości: {remainingLength:F2} mm"
-                               : "Cała dostępna przestrzeń została wykorzystana na schody.");
+                    return (
+                        $"Liczba stopni: {stepsNumber}\n" +
+                        $"Wysokość stopnia: {stepHeight:F2} mm\n" +
+                        $"Głębokość stopnia: {stepDepthCalculated:F2} mm\n" +
+                        (remainingLength > 0
+                            ? $"Pozostała wolna przestrzeń w długości: {remainingLength:F2} mm"
+                            : "Cała dostępna przestrzeń została wykorzystana na schody."),
+                        stepsNumber, stepHeight, stepDepthCalculated, stairsMade
+                    );
                 }
             }
 
-            return "Nie udało się stworzyć wygodnych schodów.";
+            return ("Nie udało się stworzyć wygodnych schodów.", 0, 0f, 0f,false);
         }
-    }
 
+    }
 }

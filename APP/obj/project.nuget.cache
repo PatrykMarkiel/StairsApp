@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "38ztPsim/BM=",
+  "dgSpecHash": "uQTDG/jhmM0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\patry\\source\\repos\\APP\\APP.csproj",
+  "projectFilePath": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\APP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patry\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

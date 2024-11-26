@@ -32925,11 +32925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patry\\source\\repos\\APP\\APP.csproj",
+      "projectUniqueName": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\APP.csproj",
       "projectName": "APP",
-      "projectPath": "C:\\Users\\patry\\source\\repos\\APP\\APP.csproj",
+      "projectPath": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\APP.csproj",
       "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patry\\source\\repos\\APP\\obj\\",
+      "outputPath": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
