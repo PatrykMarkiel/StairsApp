@@ -1,3 +1,8 @@
+# Stairs Program Documentation
+
+### Overview
+This program calculates the structure of stairs based on specified dimensions.
+
 ## Project Assumptions
 1. The program should determine the number of steps and their dimensions (each step of the stairs should be the same).
 2. The input data consists of the height (Hk) and length (Lk) where the stairs are to be located.
