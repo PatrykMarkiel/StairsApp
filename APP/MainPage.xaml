@@ -1,4 +1,4 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="APP.MainPage">
 
@@ -8,7 +8,7 @@
                CornerRadius="10" 
                Padding="0">
             <Entry x:Name="HkEntry" 
-                   Placeholder="Wysokość Hk (mm)" 
+                   Placeholder="Height Hk (mm)" 
                    Keyboard="Numeric"   
                    BackgroundColor="White"
                    TextColor="Black"/>
@@ -19,20 +19,20 @@
                CornerRadius="10" 
                Padding="0">
             <Entry x:Name="LkEntry" 
-                   Placeholder="Długość Lk (mm)" 
+                   Placeholder="Lenght Lk (mm)" 
                    Keyboard="Numeric"   
                    BackgroundColor="White" 
                    TextColor="Black"/>
         </Frame>
 
-        <Button Text="Oblicz" 
+        <Button Text="Calculate" 
                 Clicked="OnSubmitClicked" 
                 BackgroundColor="Bisque"
                 FontAttributes="Bold" />
-
         <Label x:Name="ResultLabel" 
-               IsVisible="False" 
-               FontAttributes="Bold" />
+            IsVisible="False" 
+            FontAttributes="Bold"
+            />
 
         <GraphicsView x:Name="StairsLayout" 
               IsVisible="True" 
