@@ -1,4 +1,4 @@
-﻿using Microsoft.Maui.Graphics;
+using Microsoft.Maui.Graphics;
 
 namespace APP.Drawers 
 {
@@ -30,8 +30,8 @@ namespace APP.Drawers
                 var x = i * stepDepth * scaleX;
                 var y = i * stepHeight * scaleY;
 
-                canvas.FillRectangle(x, y, stepDepth * scaleX, stepHeight * scaleY);
-                canvas.DrawRectangle(x, y, stepDepth * scaleX, stepHeight * scaleY);
+                canvas.FillRectangle(x, y, stepDepth * scaleX, stepHeight * scaleX);
+                canvas.DrawRectangle(x, y, stepDepth * scaleX, stepHeight * scaleX);
             }
         }
     }
