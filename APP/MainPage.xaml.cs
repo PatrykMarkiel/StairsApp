@@ -1,4 +1,4 @@
-﻿using APP.Drawers;
+using APP.Drawers;
 namespace APP
 {
     public partial class MainPage : ContentPage
@@ -82,18 +82,18 @@ namespace APP
                     stairsMade = true;
                     float remainingLength = Lk - (stepsNumber * stepDepthCalculated);
                     return (
-                        $"Liczba stopni: {stepsNumber}\n" +
-                        $"Wysokość stopnia: {stepHeight:F2} mm\n" +
-                        $"Głębokość stopnia: {stepDepthCalculated:F2} mm\n" +
+                        $"Number of steps: {stepsNumber}\n" +
+                        $"Steps height: {stepHeight:F2} mm\n" +
+                        $"Steps depth: {stepDepthCalculated:F2} mm\n" +
                         (remainingLength > 0
-                            ? $"Pozostała wolna przestrzeń w długości: {remainingLength:F2} mm"
-                            : "Cała dostępna przestrzeń została wykorzystana na schody."),
+                            ? $"Remaining space: {remainingLength:F2} mm"
+                            : "All space has been used"),
                         stepsNumber, stepHeight, stepDepthCalculated, stairsMade
                     );
                 }
             }
 
-            return ("Nie udało się stworzyć wygodnych schodów.", 0, 0f, 0f, false);
+            return ("We couldn't made comfortable stairs.", 0, 0f, 0f, false);
         }
     }
 }
