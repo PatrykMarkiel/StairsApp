@@ -1,5 +1,5 @@
 # Stairs Program Documentation
-##Stairs Display
+## Stairs Display
 
 ### Overview
 This program calculates the structure of stairs based on specified dimensions.
