@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\drawers\\stairdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:drawers\\stairdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\drawers\\stairdrawer2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:drawers\\stairdrawer2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C155E0F4-DF12-40BC-A5F5-21DDB1837B08}|APP.csproj|c:\\users\\patry\\desktop\\githubdata\\stairsapp\\app\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "StairDrawer2.cs",
+              "DocumentMoniker": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\Drawers\\StairDrawer2.cs",
+              "RelativeDocumentMoniker": "Drawers\\StairDrawer2.cs",
+              "ToolTip": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\Drawers\\StairDrawer2.cs",
+              "RelativeToolTip": "Drawers\\StairDrawer2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:49:49.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -43,39 +60,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StairDrawer.cs",
               "DocumentMoniker": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\Drawers\\StairDrawer.cs",
               "RelativeDocumentMoniker": "Drawers\\StairDrawer.cs",
               "ToolTip": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\Drawers\\StairDrawer.cs",
               "RelativeToolTip": "Drawers\\StairDrawer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T18:34:35.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAswFIAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T17:11:08.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
               "ToolTip": "C:\\Users\\patry\\Desktop\\GithubData\\StairsApp\\APP\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-26T17:10:11.006Z",
               "EditorCaption": ""

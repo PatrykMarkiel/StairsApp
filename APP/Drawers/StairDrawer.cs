@@ -28,7 +28,7 @@ namespace APP.Drawers
             for (int i = 0; i < stepsNumber; i++)
             {
                 var x = i * stepDepth * scaleX;
-                var y = i * stepHeight * scaleY;
+                var y = i * stepHeight * scaleX;
 
                 canvas.FillRectangle(x, y, stepDepth * scaleX, stepHeight * scaleX);
                 canvas.DrawRectangle(x, y, stepDepth * scaleX, stepHeight * scaleX);

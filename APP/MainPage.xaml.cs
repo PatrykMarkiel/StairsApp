@@ -40,7 +40,7 @@ namespace APP
             var stairsRect = new Rect(0, 0, stepsNumber * stepDepth * scaleX, stepsNumber * stepHeight * scaleY);
 
             StairsLayout.Drawable = new StairDrawer(stepsNumber, stepHeight, stepDepth, (float)scaleX, (float)scaleY);
-            StairsLayout.IsVisible = true;
+            StairsLayout2.Drawable = new StairDrawer2(stepsNumber, stepHeight, stepDepth, (float)scaleX, (float)scaleY);
         }
 
         private (string, int, float, float, Boolean) CalculateStairs(int Hk, int Lk)

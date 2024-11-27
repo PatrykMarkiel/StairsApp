@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\patry\Desktop\GithubData\StairsApp\APP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-26T19:39:57.568</Modified>
+      <Modified>2024-11-27T16:22:00.906</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\patry\Desktop\GithubData\StairsApp\APP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\APP.dll">
       <PackagePath>APP.dll</PackagePath>
-      <Modified>2024-11-26T19:39:57.084</Modified>
+      <Modified>2024-11-27T16:22:00.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\patry\Desktop\GithubData\StairsApp\APP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>APP.exe</PackagePath>
-      <Modified>2024-11-26T19:39:57.088</Modified>
+      <Modified>2024-11-27T16:22:00.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\patry\Desktop\GithubData\StairsApp\APP\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

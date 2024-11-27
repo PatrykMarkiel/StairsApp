@@ -34,10 +34,25 @@
             FontAttributes="Bold"
             />
 
-        <GraphicsView x:Name="StairsLayout" 
-              IsVisible="True" 
-              HeightRequest="300" 
-              WidthRequest="{Binding Source={x:Reference StairsLayout}, Path=Height}" />
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <GraphicsView x:Name="StairsLayout" 
+                  IsVisible="True" 
+                  HeightRequest="300" 
+                  WidthRequest="300" 
+                  Grid.Column="0" />
+
+            <GraphicsView x:Name="StairsLayout2" 
+                  IsVisible="True" 
+                  HeightRequest="300" 
+                  WidthRequest="300" 
+                  Grid.Column="2" />
+        </Grid>
 
     </VerticalStackLayout>
 
