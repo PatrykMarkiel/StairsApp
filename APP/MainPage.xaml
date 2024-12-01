@@ -1,59 +1,65 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="APP.MainPage">
-
-    <VerticalStackLayout Spacing="25" Padding="30">
-        <Frame HasShadow="True" 
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+            <Frame HasShadow="True" 
                BorderColor="Gray" 
                CornerRadius="10" 
                Padding="0">
-            <Entry x:Name="HkEntry" 
+                <Entry x:Name="HkEntry" 
                    Placeholder="Height Hk (mm)" 
                    Keyboard="Numeric"   
                    BackgroundColor="White"
                    TextColor="Black"/>
-        </Frame>
+            </Frame>
 
-        <Frame HasShadow="True" 
+            <Frame HasShadow="True" 
                BorderColor="Gray" 
                CornerRadius="10" 
                Padding="0">
-            <Entry x:Name="LkEntry" 
+                <Entry x:Name="LkEntry" 
                    Placeholder="Lenght Lk (mm)" 
                    Keyboard="Numeric"   
                    BackgroundColor="White" 
                    TextColor="Black"/>
-        </Frame>
+            </Frame>
 
-        <Button Text="Calculate" 
+            <Button Text="Calculate" 
                 Clicked="OnSubmitClicked" 
                 BackgroundColor="Bisque"
                 FontAttributes="Bold" />
-        <Label x:Name="ResultLabel" 
+            <Label x:Name="ResultLabel" 
             IsVisible="False" 
             FontAttributes="Bold"
             />
+            <Grid x:Name="AdaptiveGrid"
+                  HorizontalOptions="Center" 
+                  VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-        <Grid HorizontalOptions="Center" VerticalOptions="Center">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="100" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
+                <GraphicsView x:Name="StairsLayout" 
+                              HeightRequest="300" 
+                              WidthRequest="300" 
+                              Grid.Row="0" 
+                              Grid.Column="0" />
 
-            <GraphicsView x:Name="StairsLayout" 
-                  IsVisible="True" 
-                  HeightRequest="300" 
-                  WidthRequest="300" 
-                  Grid.Column="0" />
+                <GraphicsView x:Name="StairsLayout2" 
+                              HeightRequest="300" 
+                              WidthRequest="300" 
+                              Grid.Row="1" 
+                              Grid.Column="0" />
 
-            <GraphicsView x:Name="StairsLayout2" 
-                  IsVisible="True" 
-                  HeightRequest="300" 
-                  WidthRequest="300" 
-                  Grid.Column="2" />
-        </Grid>
+            </Grid>
 
-    </VerticalStackLayout>
 
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
